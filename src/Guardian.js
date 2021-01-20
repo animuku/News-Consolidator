@@ -53,6 +53,7 @@ class Guardian extends React.Component{
                     this.state.articles.map(article=>{
                         return(
                             <Article
+                            key={article.webTitle}
                             title={article.webTitle}
                             abstract={article.fields.trailText}
                             url={article.webUrl}

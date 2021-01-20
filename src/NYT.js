@@ -59,6 +59,7 @@ class NYT extends React.Component{
                     this.state.articles.map(article=>{
                         return (
                             <Article
+                            key={article.title}
                             title={article.title}
                             abstract={article.abstract}
                             url={article.url}
